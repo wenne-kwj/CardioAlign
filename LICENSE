@@ -1,0 +1,13 @@
+Licensing information
+=====================
+
+Third-party code retains its original rights and notices:
+
+* Restormer: models/restormer/LICENSE.Restormer (MIT).
+* Pix2Pix-U-Net: models/pix2pix_unet/LICENSE.pix2pix (original BSD notices).
+* Other source attribution and retained-license status: models/SOURCES.md.
+
+No new repository-wide license is assigned by this code reorganization.
+Project-specific code and modifications remain under their owners' rights
+until the repository owner specifies a license. This file does not override
+any upstream license or grant additional rights to third-party implementations.

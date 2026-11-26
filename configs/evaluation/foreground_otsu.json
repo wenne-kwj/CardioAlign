@@ -1,0 +1,6 @@
+{
+  "metrics": ["mae", "nrmse", "ssim", "pcc", "psnr", "dice", "iou"],
+  "ssim_window_size": 11,
+  "ssim_sigma": 1.5,
+  "foreground": {"method": "otsu", "bins": 256}
+}

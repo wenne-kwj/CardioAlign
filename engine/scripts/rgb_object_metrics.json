@@ -1,0 +1,9 @@
+{
+  "red_threshold16": 14906,
+  "blue_threshold16": 6425,
+  "green_threshold16": 5140,
+  "red_min_area": 15,
+  "blue_min_area": 50,
+  "iou_threshold": 0.5,
+  "blue_threshold_mode": "otsu"
+}

@@ -1,0 +1,5 @@
+{
+  "metrics": ["mae", "nrmse", "ssim", "pcc", "psnr"],
+  "ssim_window_size": 11,
+  "ssim_sigma": 1.5
+}

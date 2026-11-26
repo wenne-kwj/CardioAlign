@@ -1,0 +1,57 @@
+{
+  "name": "palette",
+  "unet": {
+    "in_channel": 4,
+    "out_channel": 3,
+    "inner_channel": 64,
+    "channel_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "attn_res": [
+      16
+    ],
+    "num_head_channels": 32,
+    "res_blocks": 2,
+    "dropout": 0.2,
+    "image_size": 512
+  },
+  "beta_schedule": {
+    "train": {
+      "schedule": "linear",
+      "n_timestep": 2000,
+      "linear_start": 1e-06,
+      "linear_end": 0.01
+    },
+    "test": {
+      "schedule": "linear",
+      "n_timestep": 2000,
+      "linear_start": 1e-06,
+      "linear_end": 0.01
+    }
+  },
+  "loss": "v_mse",
+  "training": {
+    "learning_rate": 8e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0,
+    "gradient_clip": null,
+    "steps": 1000,
+    "batch_size": 1,
+    "optimizer": "Adam",
+    "ema_decay": 0.9999
+  },
+  "prediction_type": "v",
+  "noise_conditioning": "gamma",
+  "sampling": {
+    "method": "ddim",
+    "steps": 100,
+    "eta": 0.0
+  },
+  "sdpa_attention": true
+}

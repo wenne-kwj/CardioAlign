@@ -1,0 +1,28 @@
+{
+  "name": "pix2pix_resnet",
+  "model": {
+    "input_nc": 1,
+    "output_nc": 3,
+    "ngf": 32,
+    "ndf": 32
+  },
+  "loss": {
+    "gan_mode": "lsgan",
+    "lambda_L1": 100,
+    "real_label": 0.9
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.0002,
+    "discriminator_learning_rate": 0.0001,
+    "betas": [
+      0.5,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "gradient_clip": 5.0,
+    "update_order": "G_then_D",
+    "steps": 1000,
+    "batch_size": 1
+  }
+}
